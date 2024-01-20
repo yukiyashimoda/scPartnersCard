@@ -101,7 +101,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
           </div>
 
           <div className="flex flex-wrap">
-  <button className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f2f2f2] m-2 sm:m-2 
+  <button className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-dark-brown text-dark-brown font-semibold hover:text-white py-2 px-4 border border-dark-brown hover:border-transparent rounded-full mb-2 md:mb-0 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f2f2f2] m-2 sm:m-2 
     hover:border-[1px] cursor-pointer duration-5" onClick={handleAllButtonClick}>
     ALL
   </button>
@@ -109,7 +109,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
     categoryList.map((category: string, index: number) => (
       <button
         key={index}
-        className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-emerald-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f2f2f2] m-2 sm:m-2 
+        className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-carrot text-dark-brown font-semibold hover:text-white py-2 px-4 border border-dark-brown hover:border-transparent rounded-full mb-2 md:mb-0 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f2f2f2] m-2 sm:m-2 
         hover:border-[1px] cursor-pointer duration-5"
         onClick={() => setCategory(getDropdownValue(category))}
       >
@@ -122,15 +122,15 @@ function FiltersOption({ partnersList, setCategory }: any) {
 
 <div className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 ">
     <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
-        <button data-tooltip-target="tooltip-home" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('eat'))}
+        <button data-tooltip-target="tooltip-home" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-dark-brown hover:text-white group"onClick={() => setCategory(getDropdownValue('eat'))}
             >
               食べる
         </button>
-        <div id="tooltip-home" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        <div id="tooltip-home" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-dark-brown rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
             食べる
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-wallet" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('drink'))}
+        <button data-tooltip-target="tooltip-wallet" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-dark-brown hover:text-white group"onClick={() => setCategory(getDropdownValue('drink'))}
             >
               飲む
         </button>
@@ -139,7 +139,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
         <div className="flex items-center justify-center">
-            <button data-tooltip-target="tooltip-new" type="button" className="bg-gray-400 text-white text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-gray-500 group rounded-full"onClick={handleAllButtonClick}>
+            <button data-tooltip-target="tooltip-new" type="button" className="bg-dark-brown text-white text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-carrot group rounded-full"onClick={handleAllButtonClick}>
     ALL
             </button>
         </div>
@@ -147,7 +147,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
             ALL
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-settings" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('stay'))}
+        <button data-tooltip-target="tooltip-settings" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-dark-brown hover:text-white group"onClick={() => setCategory(getDropdownValue('stay'))}
             >
               泊まる
         </button>
@@ -155,7 +155,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
             泊まる
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-profile" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('play'))}
+        <button data-tooltip-target="tooltip-profile" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-dark-brown hover:text-white group"onClick={() => setCategory(getDropdownValue('play'))}
             >
               遊ぶ
         </button>

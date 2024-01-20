@@ -1,3 +1,4 @@
+import { BiCrown } from 'react-icons/bi'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -13,6 +14,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'dark-brown': '#1B1A17',
+        'light-orange': '#F0A500',
+        'carrot': '#E45826',
+
+      }
     },
   },
   plugins: [require("daisyui")],
