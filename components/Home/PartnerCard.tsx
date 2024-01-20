@@ -36,11 +36,12 @@ function PartnerCard(props:any) {
     hover:border-[1px] cursor-pointer duration-5'>
     <div className="flex">
       <div>
-      <button className="relative inline-flex items-center justify-center w-[32px] sm:w-8 sm:h-8 h-[32px] p-1 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 rounded-lg group bg-emerald-700 ">
+      <button className="relative inline-flex items-center justify-center w-[52px] sm:w-[42px] h-[52px] sm:h-[42px] p-1 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 rounded-lg group bg-emerald-700 ">
   <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
     {modifyCategoryDropdown(partner.categoryDropdown)}
   </span>
 </button>
+
 
       </div>
       <div className='truncate'>
@@ -60,14 +61,14 @@ function PartnerCard(props:any) {
           <div className='flex'>
             <div>
             <button className="relative inline-flex items-center justify-center w-10 h-10 p-0.5 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 group bg-transparent border-r-4">
-  <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
+  <span className="text-[14px] font-bold relative px-5 py-2.5 transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
     特典
   </span>
 </button>
             </div>
             <div>
               <h2 className='text-[12px] font-light ml-1'>{partner?.terms}</h2>
-              <h2 className='text-[14px] font-bold pb-1 ml-1 text-emerald-600'>{partner?.benefit}</h2>
+              <h2 className='text-[16px] font-bold pb-1 ml-1 text-emerald-600'>{partner?.benefit}</h2>
               {/* <h2 className='line-clamp-5 text-[14px] font-light'>{partner?.notice}</h2> */}
             </div>
           </div>
