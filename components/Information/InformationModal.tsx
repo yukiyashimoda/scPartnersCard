@@ -34,8 +34,8 @@ function InformationModal({partner}:any) {
 
            </div>
            <div className='truncate'>
-            <h2 className='text-[14px] font-bold  truncate'>{partner?.companyName}</h2>
-            <h4 className='text-[10px] text-emerald-600 font-midium mb-2 truncate'>{partner.shopName}</h4>
+            <h2 className='text-[16px] font-bold  truncate'>{partner?.companyName}</h2>
+            <h4 className='text-[12px] text-emerald-600 font-midium mb-2 truncate'>{partner.shopName}</h4>
            </div>
           </div>
           <div>
@@ -69,23 +69,25 @@ function InformationModal({partner}:any) {
           </div>
           
           <div>
-            <h2 className=' text-[12px] font-light pb-5'>{partner?.introduction}</h2>
+            <h2 className=' text-[14px] font-light pb-5'>{partner?.introduction}</h2>
           </div>
 
           <div className='flex h-100 mb-5 '>
             <div>
-               <button className="relative inline-flex items-center  w-[30px] h-[30px] p-5 mb-0 me-2 overflow-hidden text-[15px] font-medium text-gray-900 rounded-lg bg-emerald-600 ">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
+            <button className="relative inline-flex items-center justify-center w-10 h-10 p-0.5 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 group bg-transparent border-r-4">
+            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap text-[14px] font-bold">
             特典
-            </span>
+               </span>
             </button>
             </div>
             <div>
-              <h2 className='text-[12px] font-light ml-1'>{partner?.terms}</h2>
-              <h2 className='text-[14px] font-bold pb-0 ml-1 text-emerald-600'>{partner?.benefit}</h2>
-              <h2 className='line-clamp-5 text-[12px] font-light'>{partner?.notice}</h2>
+              <h2 className='text-[14px] font-light ml-1'>{partner?.terms}</h2>
+              <h2 className='text-[18px] font-bold pb-0 ml-1 text-emerald-600'>{partner?.benefit}</h2>
             </div>
           </div>
+          <div>
+            <h2 className='line-clamp-5 text-[12px] font-light'>{partner?.notice}</h2>
+            </div>
           <div className='flex h-100 mt-4 mb-4 border-t border-b border-gray-300  '>
             <div className='mt-8 mb-8'>
             <img className="h-8 w-8" src="../map-pin-gray.svg" alt="" />
