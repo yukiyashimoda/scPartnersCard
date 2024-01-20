@@ -101,14 +101,16 @@ function FiltersOption({ partnersList, setCategory }: any) {
           </div>
 
           <div className="flex flex-wrap">
-  <button className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0" onClick={handleAllButtonClick}>
+  <button className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f2f2f2] m-2 sm:m-2 
+    hover:border-[1px] cursor-pointer duration-5" onClick={handleAllButtonClick}>
     ALL
   </button>
   {categoryList &&
     categoryList.map((category: string, index: number) => (
       <button
         key={index}
-        className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0"
+        className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-emerald-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f2f2f2] m-2 sm:m-2 
+        hover:border-[1px] cursor-pointer duration-5"
         onClick={() => setCategory(getDropdownValue(category))}
       >
         {category}
