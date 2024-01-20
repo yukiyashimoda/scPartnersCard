@@ -122,7 +122,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
 
 <div className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 ">
     <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
-        <button data-tooltip-target="tooltip-home" type="button" className="text-black text-[10px] inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('eat'))}
+        <button data-tooltip-target="tooltip-home" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('eat'))}
             >
               食べる
         </button>
@@ -130,7 +130,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
             食べる
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-wallet" type="button" className="text-black text-[10px] inline-flex flex-col items-center justify-center px-5 hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('drink'))}
+        <button data-tooltip-target="tooltip-wallet" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('drink'))}
             >
               飲む
         </button>
@@ -139,7 +139,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
         <div className="flex items-center justify-center">
-            <button data-tooltip-target="tooltip-new" type="button" className="bg-gray-400 text-white inline-flex flex-col items-center justify-center px-5 hover:bg-gray-500 group rounded-full"onClick={handleAllButtonClick}>
+            <button data-tooltip-target="tooltip-new" type="button" className="bg-gray-400 text-white text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-gray-500 group rounded-full"onClick={handleAllButtonClick}>
     ALL
             </button>
         </div>
@@ -147,7 +147,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
             ALL
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-settings" type="button" className="text-black text-[10px] inline-flex flex-col items-center justify-center px-5 hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('stay'))}
+        <button data-tooltip-target="tooltip-settings" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('stay'))}
             >
               泊まる
         </button>
@@ -155,7 +155,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
             泊まる
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-profile" type="button" className="text-black text-[10px] inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('play'))}
+        <button data-tooltip-target="tooltip-profile" type="button" className="text-black text-[12px] inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('play'))}
             >
               遊ぶ
         </button>
