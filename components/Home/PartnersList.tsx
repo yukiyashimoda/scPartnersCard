@@ -122,20 +122,20 @@ function FiltersOption({ partnersList, setCategory }: any) {
 
 <div className="fixed z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 ">
     <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
-        <button data-tooltip-target="tooltip-home" type="button" className="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group"onClick={() => setCategory(getDropdownValue('eat'))}
+        <button data-tooltip-target="tooltip-home" type="button" className="text-black inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('eat'))}
             >
               食べる
         </button>
-        <div id="tooltip-home" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            Home
+        <div id="tooltip-home" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            食べる
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-wallet" type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"onClick={() => setCategory(getDropdownValue('drink'))}
+        <button data-tooltip-target="tooltip-wallet" type="button" className="text-black inline-flex flex-col items-center justify-center px-5 hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('drink'))}
             >
               飲む
         </button>
         <div id="tooltip-wallet" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            Wallet
+            飲む
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
         <div className="flex items-center justify-center">
@@ -143,24 +143,24 @@ function FiltersOption({ partnersList, setCategory }: any) {
     ALL
             </button>
         </div>
-        <div id="tooltip-new" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            Create new item
+        <div id="tooltip-new" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            ALL
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-settings" type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"onClick={() => setCategory(getDropdownValue('stay'))}
+        <button data-tooltip-target="tooltip-settings" type="button" className="text-black inline-flex flex-col items-center justify-center px-5 hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('stay'))}
             >
               泊まる
         </button>
         <div id="tooltip-settings" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            Settings
+            泊まる
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
-        <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group"onClick={() => setCategory(getDropdownValue('play'))}
+        <button data-tooltip-target="tooltip-profile" type="button" className="text-black inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-600 hover:text-white group"onClick={() => setCategory(getDropdownValue('play'))}
             >
               遊ぶ
         </button>
         <div id="tooltip-profile" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            Profile
+            遊ぶ
             <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
     </div>
