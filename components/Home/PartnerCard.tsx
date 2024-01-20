@@ -45,7 +45,7 @@ function PartnerCard(props:any) {
 
       </div>
       <div className='truncate'>
-        <h2 className='text-[16px] font-bold  truncate'>{partner?.companyName}</h2>
+        <h2 className='text-[16px] font-bold  truncate text-black'>{partner?.companyName}</h2>
         <h4 className='text-[12px] text-emerald-600 font-midium mb-2 truncate'>{partner.shopName}</h4>
       </div>
     </div>
@@ -67,7 +67,7 @@ function PartnerCard(props:any) {
 </button>
             </div>
             <div>
-              <h2 className='text-[12px] font-light ml-1'>{partner?.terms}</h2>
+              <h2 className='text-[12px] font-light ml-1 text-gray-600'>{partner?.terms}</h2>
               <h2 className='text-[16px] font-bold pb-1 ml-1 text-emerald-600'>{partner?.benefit}</h2>
               {/* <h2 className='line-clamp-5 text-[14px] font-light'>{partner?.notice}</h2> */}
             </div>
