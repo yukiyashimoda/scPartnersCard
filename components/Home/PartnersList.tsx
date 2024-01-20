@@ -100,22 +100,20 @@ function FiltersOption({ partnersList, setCategory }: any) {
             <span className='label-text font-bold text-gray-700 text-[14px]'>カテゴリー</span>
           </div>
 
-          <div className="">
-          <div className="flex overflow-x-auto">
-  <button className="text-[12px] mx-2 mt-3 w-[120px] bg-transparent hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0" onClick={handleAllButtonClick}>
+          <div className="flex flex-wrap">
+  <button className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0" onClick={handleAllButtonClick}>
     ALL
   </button>
   {categoryList &&
     categoryList.map((category: string, index: number) => (
       <button
         key={index}
-        className="text-[12px] mx-2 mt-3 w-[120px] bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0"
+        className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0"
         onClick={() => setCategory(getDropdownValue(category))}
       >
         {category}
       </button>
     ))}
-</div>
 </div>
 
         </label>
