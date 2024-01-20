@@ -36,11 +36,12 @@ function PartnerCard(props:any) {
     hover:border-[1px] cursor-pointer duration-5'>
     <div className="flex">
       <div>
-      <button className="relative inline-flex items-center justify-center w-10 h-10 p-0.5 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 rounded-lg group bg-emerald-700 ">
+      <button className="relative inline-flex items-center justify-center w-[32px] sm:w-8 sm:h-8 h-[32px] p-1 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 rounded-lg group bg-emerald-700 ">
   <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
     {modifyCategoryDropdown(partner.categoryDropdown)}
   </span>
 </button>
+
       </div>
       <div className='truncate'>
         <h2 className='text-[16px] font-bold  truncate'>{partner?.companyName}</h2>
@@ -49,13 +50,12 @@ function PartnerCard(props:any) {
     </div>
 
       
-        <div className='flex justify-center'></div>
-        <Image src={partner?.image?.url}
-        alt={partner.companyName}
-        width={220}
-        height={200}
-        className='w-[250px] h-[150px] 
-        mb-3 object-cover' />
+    <Image src={partner?.image?.url}
+             alt={partner.companyName}
+             width={660}
+             height={600}
+             className=' 
+            mb-3 object-cover py-5' />
         <div className='group-hover:hidden'>
           <div className='flex'>
             <div>

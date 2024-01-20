@@ -22,19 +22,20 @@ function InformationModal({partner}:any) {
   
   return (
     <div className="modal-box w-95% max-w-2xl bg-white">
-      <div className='grid grid-cols-1 p-5'>
+      <div className='grid grid-cols-1 p-[5px]'>
         <div className="">
           <div className='flex'>
            <div>
-            <button className="relative inline-flex items-center  w-15 h-15 p-3 mb-1 me-2 overflow-hidden text-[15px] font-medium text-gray-900 rounded-lg bg-emerald-600 ">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
-            {modifyCategoryDropdown(partner.categoryDropdown)}
-            </span>
-            </button>
+           <button className="relative inline-flex items-center justify-center w-[52px] sm:w-[42px] h-[52px] sm:h-[42px]  p-1 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 rounded-lg group bg-emerald-700 ">
+           <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
+           {modifyCategoryDropdown(partner.categoryDropdown)}
+           </span>
+           </button>
+
            </div>
            <div className='truncate'>
-            <h2 className='text-[24px] font-bold  truncate'>{partner?.companyName}</h2>
-            <h4 className='text-[18px] text-emerald-600 font-midium mb-2 truncate'>{partner.shopName}</h4>
+            <h2 className='text-[24px] sm:text-[14px] font-bold  truncate'>{partner?.companyName}</h2>
+            <h4 className='text-[18px] sm:text-[10px] text-emerald-600 font-midium mb-2 truncate'>{partner.shopName}</h4>
            </div>
           </div>
           <div>

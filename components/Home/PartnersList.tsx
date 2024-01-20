@@ -26,7 +26,7 @@ function PartnersList(props: any) {
     <div>
       <FiltersOption partnersList={props.partnersList} setCategory={setCategory} />
 
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10'>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-10'>
         {!isLoaded &&
           filteredPartnersList.map((partner: any, index: number) => (
             <div key={index} onClick={() => openModal(partner)}>
@@ -102,14 +102,14 @@ function FiltersOption({ partnersList, setCategory }: any) {
 
           <div className="">
           <div className="flex overflow-x-auto">
-  <button className="mx-2 mt-3 w-[150px] bg-transparent hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0" onClick={handleAllButtonClick}>
+  <button className="text-[12px] mx-2 mt-3 w-[120px] bg-transparent hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0" onClick={handleAllButtonClick}>
     ALL
   </button>
   {categoryList &&
     categoryList.map((category: string, index: number) => (
       <button
         key={index}
-        className="mx-2 mt-3 w-[150px] bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0"
+        className="text-[12px] mx-2 mt-3 w-[120px] bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full mb-2 md:mb-0"
         onClick={() => setCategory(getDropdownValue(category))}
       >
         {category}
