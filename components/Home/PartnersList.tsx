@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import PartnerCard from './PartnerCard';
 import InformationModal from '../Information/InformationModal';
+import { TbCategoryFilled } from "react-icons/tb";
+import { MdRestaurant, MdBusinessCenter, MdNightlife, MdOtherHouses } from "react-icons/md";
+import { FaHandHoldingHeart, FaSnowman } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
+import { RiMentalHealthFill } from "react-icons/ri";
 
 function PartnersList(props: any) {
   const [isLoaded, setIsLoaded] = useState(true);
@@ -97,13 +102,70 @@ function PartnersList(props: any) {
       {isSpeedDialOpen && (
   <div className="speed-dial" style={{ position: 'fixed', bottom: 72, right: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
     {/* Add your menu button components here */}
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('eat'))}>食品/飲食</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('sale'))}>販売/サービス</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('life'))}>暮らし/ライフスタイル</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('health'))}>医療/美容/健康</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('business'))}>ビジネス全般</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('hobby'))}>趣味/娯楽</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('nights'))}>ナイトレジャー</button>
+    <div className="flex justify-end">
+    <div className="text-[14px] font-bold relative px-3 py-3 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 whitespace-nowrap  bg-gray-100 text-carrot mr-3">
+      <span>食品/飲食</span>
+    </div>
+    <div>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('eat'))} title="食品/飲食"><MdRestaurant size={30}  /></button>
+    </div>
+    </div>
+    <div className="flex justify-end">
+    <div className="text-[14px] font-bold relative px-3 py-3 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 whitespace-nowrap  bg-gray-100 text-carrot mr-3">
+      <span>販売/サービス</span>
+    </div>
+    <div>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('sale'))}><FaCartShopping size={30}/></button>
+    </div>
+    </div>
+    <div className="flex justify-end">
+    <div className="text-[14px] font-bold relative px-3 py-3 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 whitespace-nowrap  bg-gray-100 text-carrot mr-3">
+      <span>暮らし/ライフスタイル</span>
+    </div>
+    <div>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('life'))}><FaHandHoldingHeart size={30}/></button>
+    </div>
+    </div>
+    <div className="flex justify-end">
+    <div className="text-[14px] font-bold relative px-3 py-3 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 whitespace-nowrap  bg-gray-100 text-carrot mr-3">
+      <span>医療/美容/健康</span>
+    </div>
+    <div>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('health'))}><RiMentalHealthFill  size={30}/></button>
+    </div>
+    </div>
+    <div className="flex justify-end">
+    <div className="text-[14px] font-bold relative px-3 py-3 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 whitespace-nowrap  bg-gray-100 text-carrot mr-3">
+      <span>ビジネス全般</span>
+    </div>
+    <div>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('business'))}><MdBusinessCenter size={30}/></button>
+    </div>
+    </div>
+    <div className="flex justify-end">
+    <div className="text-[14px] font-bold relative px-3 py-3 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 whitespace-nowrap bg-gray-100 text-carrot mr-3">
+      <span>趣味/娯楽</span>
+    </div>
+    <div>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('hobby'))}><FaSnowman size={30}/></button>
+    </div>
+    </div>
+    <div className="flex justify-end">
+    <div className="text-[14px] font-bold relative px-3 py-3 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 whitespace-nowrap bg-gray-100 text-carrot mr-3">
+      <span>ナイトレジャー</span>
+    </div>
+    <div>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('nights'))}><MdNightlife size={30}/></button>
+    </div>
+    </div>
+    <div className="flex justify-end">
+    <div className="text-[14px] font-bold relative px-3 py-3 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0 whitespace-nowrap bg-gray-100 text-carrot mr-3">
+      <span>その他</span>
+    </div>
+    <div>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('other'))}><MdOtherHouses size={30}/></button>
+    </div>
+    </div>
     <button className="menu-button menu-button bg-carrot text-white rounded-full p-2 shadow-md text-sm" onClick={handleAllButtonClick}>ALL</button>
 
   </div>
@@ -111,11 +173,11 @@ function PartnersList(props: any) {
 
 {/* Speed Dial Trigger Button */}
 <button
-  className="speed-dial-trigger  bg-white text-black rounded-full p-2 shadow-md text-sm"
+  className="speed-dial-trigger  bg-carrot text-white rounded-full p-2 shadow-md text-sm"
   onClick={toggleSpeedDial}
   style={{ position: 'fixed', bottom: 16, right: 16 }}
 >
-  カテゴリー
+<TbCategoryFilled size={30}/>
 </button>
         </div>
     );
@@ -202,7 +264,7 @@ return (
       <select
         className="py-10 bg-white p-10 sm:p-5 rounded-2xl m-2 sm:m-2
         hover:bg-white h-[3rem]
-        border-2 border-black
+        border-[1px] border-black
         hover:border-black cursor-pointer duration-5 text-[16px] text-black
         focus:outline-none"
         onChange={(e) => setCategory(e.target.value)}
