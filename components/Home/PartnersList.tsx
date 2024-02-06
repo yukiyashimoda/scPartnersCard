@@ -20,38 +20,54 @@ function PartnersList(props: any) {
   };
 
   const filteredPartnersList = category
-    ? props.partnersList.filter((partner: any) => partner.categoryDropdown === category)
+    ? props.partnersList.filter((partner: any) => partner.categoryDropDown2 === category)
     : props.partnersList;
 
   const toggleSpeedDial = () => {
     setIsSpeedDialOpen(!isSpeedDialOpen);
   };
   
-    const getCategoryName = (categoryDropdown: string) => {
-      switch (categoryDropdown) {
+    const getCategoryName = (categoryDropDown2: string) => {
+      switch (categoryDropDown2) {
         case 'eat':
-          return '食べる';
-        case 'drink':
-          return '飲む';
-        case 'stay':
-          return '泊まる';
-        case 'play':
-          return '遊ぶ';
+          return '食品/飲食';
+        case 'sale':
+          return '販売/サービス';
+        case 'life':
+          return '暮らし/ライフスタイル';
+        case 'health':
+          return '医療/美容/健康';
+        case 'business':
+          return 'ビジネス全般';
+        case 'hobby':
+          return '趣味/娯楽';
+        case 'night':
+          return 'ナイトレジャー';
+        case 'other':
+          return 'その他';
         default:
-          return categoryDropdown;
+          return categoryDropDown2;
       }
     };
   
     const getDropdownValue = (displayedCategory: string) => {
       switch (displayedCategory) {
-        case '食べる':
+        case '食品/飲食':
           return 'eat';
-        case '飲む':
-          return 'drink';
-        case '泊まる':
-          return 'stay';
-        case '遊ぶ':
-          return 'play';
+        case '販売/サービス':
+          return 'sale';
+        case '暮らし/ライフスタイル':
+          return 'life';
+          case '医療/美容/健康':
+            return 'health';
+          case 'ビジネス全般':
+            return 'business';
+          case '趣味/娯楽':
+            return 'hobby';
+          case 'ナイトレジャー':
+            return 'night';
+          case 'その他':
+            return 'other';
         default:
           return displayedCategory;
       }
@@ -81,10 +97,13 @@ function PartnersList(props: any) {
       {isSpeedDialOpen && (
   <div className="speed-dial" style={{ position: 'fixed', bottom: 72, right: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
     {/* Add your menu button components here */}
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('eat'))}>食べる</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('drink'))}>飲む</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('stay'))}>泊まる</button>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('play'))}>遊ぶ</button>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('eat'))}>食品/飲食</button>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('sale'))}>販売/サービス</button>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('life'))}>暮らし/ライフスタイル</button>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('health'))}>医療/美容/健康</button>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('business'))}>ビジネス全般</button>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('hobby'))}>趣味/娯楽</button>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('nights'))}>ナイトレジャー</button>
     <button className="menu-button menu-button bg-carrot text-white rounded-full p-2 shadow-md text-sm" onClick={handleAllButtonClick}>ALL</button>
 
   </div>
@@ -112,79 +131,93 @@ function FiltersOption({ partnersList, setCategory }: any) {
     }
   }, [partnersList]);
 
-  const getCategoryName = (categoryDropdown: string) => {
-    switch (categoryDropdown) {
+  const getCategoryName = (categoryDropDown2: string) => {
+    switch (categoryDropDown2) {
       case 'eat':
-        return '食べる';
-      case 'drink':
-        return '飲む';
-      case 'stay':
-        return '泊まる';
-      case 'play':
-        return '遊ぶ';
+        return '食品/飲食';
+      case 'sale':
+        return '販売/サービス';
+      case 'life':
+        return '暮らし/ライフスタイル';
+      case 'health':
+        return '医療/美容/健康';
+      case 'business':
+        return 'ビジネス全般';
+      case 'hobby':
+        return '趣味/娯楽';
+      case 'night':
+        return 'ナイトレジャー';
+      case 'other':
+        return 'その他';
       default:
-        return categoryDropdown;
+        return categoryDropDown2;
     }
   };
 
   const getDropdownValue = (displayedCategory: string) => {
     switch (displayedCategory) {
-      case '食べる':
+      case '食品/飲食':
         return 'eat';
-      case '飲む':
-        return 'drink';
-      case '泊まる':
-        return 'stay';
-      case '遊ぶ':
-        return 'play';
+      case '販売/サービス':
+        return 'sale';
+      case '暮らし/ライフスタイル':
+        return 'life';
+        case '医療/美容/健康':
+          return 'health';
+        case 'ビジネス全般':
+          return 'business';
+        case '趣味/娯楽':
+          return 'hobby';
+        case 'ナイトレジャー':
+          return 'night';
+        case 'その他':
+          return 'other';
       default:
         return displayedCategory;
     }
   };
 
+  
+
   const filterPartnerList = () => {
-    const categories = partnersList.map((element: any) =>
-      getCategoryName(element.categoryDropdown)
-    );
-    setCategoryList(categories);
+    const categories = partnersList.map((element: any) => getCategoryName(element.categoryDropDown2));
+    // 重複を除外したカテゴリーのリストを作成
+    const uniqueCategories = Array.from(new Set(categories));
+    setCategoryList(uniqueCategories);
   };
+
 
   const handleAllButtonClick = () => {
     setCategory(undefined);
   };
 
-  return (
-    <div className='mt-10 items-center pl-2'>
-      <div>
-        <label className='form-control w-full'>
-          <div className='label'>
-            <span className='label-text font-bold text-gray-700 text-[14px]'>カテゴリー</span>
-          </div>
-
-          <div className="flex flex-wrap">
-  <button className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-dark-brown text-dark-brown font-semibold hover:text-white py-2 px-4 border border-dark-brown hover:border-transparent rounded-full mb-2 md:mb-0 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f2f2f2] m-2 sm:m-2 
-    hover:border-[1px] cursor-pointer duration-5" onClick={handleAllButtonClick}>
-    ALL
-  </button>
-  {categoryList &&
-    categoryList.map((category: string, index: number) => (
-      <button
-        key={index}
-        className="text-[12px] mx-2 mt-3 min-w-[80px] bg-transparent hover:bg-carrot text-dark-brown font-semibold hover:text-white py-2 px-4 border border-dark-brown hover:border-transparent rounded-full mb-2 md:mb-0 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f2f2f2] m-2 sm:m-2 
-        hover:border-[1px] cursor-pointer duration-5"
-        onClick={() => setCategory(getDropdownValue(category))}
-      >
-        {category}
-      </button>
-      
-    ))}
-</div>
-
-
-
-        </label>
+  // カテゴリーをドロップダウンメニューに変更したコード
+return (
+  <div className='mt-30 items-center pl-2'>
+  <div>
+    <label className='form-control w-full'>
+      <div className='label'>
+        <span className='label-text font-bold text-gray-700 text-[14px]'>カテゴリー</span>
       </div>
-    </div>
+      <select
+        className="py-10 bg-white p-10 sm:p-5 rounded-2xl m-2 sm:m-2
+        hover:bg-white h-[3rem]
+        border-2 border-black
+        hover:border-black cursor-pointer duration-5 text-[16px] text-black
+        focus:outline-none"
+        onChange={(e) => setCategory(e.target.value)}
+      >
+        <option value="">ALL</option>
+        {categoryList &&
+          categoryList.map((category: string, index: number) => (
+            <option key={index} value={getDropdownValue(category)}>
+              {category}
+            </option>
+          ))}
+      </select>
+    </label>
+  </div>
+</div>
   );
 }
 

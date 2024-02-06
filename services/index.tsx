@@ -4,7 +4,7 @@ export const getPartnersList = async() => {
   const query=gql`
   query PartnerList {
     partnerLists {
-      categoryDropdown
+      categoryDropDown2
       createdAt
       id
       companyName
