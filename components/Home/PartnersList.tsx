@@ -31,6 +31,15 @@ function PartnersList(props: any) {
   const toggleSpeedDial = () => {
     setIsSpeedDialOpen(!isSpeedDialOpen);
   };
+
+  // 画面上のどこかをクリックした時にスピードダイヤルを閉じる関数
+  const handleClickOutside = (event: any) => {
+    const speedDial = document.getElementById('speed-dial');
+    if (speedDial && !speedDial.contains(event.target)) {
+      setIsSpeedDialOpen(false);
+    }
+  };
+
   
     const getCategoryName = (categoryDropDown2: string) => {
       switch (categoryDropDown2) {

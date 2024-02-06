@@ -1,18 +1,28 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { MdRestaurant, MdBusinessCenter, MdNightlife, MdOtherHouses } from "react-icons/md";
+import { FaHandHoldingHeart, FaSnowman } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
+import { RiMentalHealthFill } from "react-icons/ri";
 
-const modifyCategoryDropdown = (originalCategory: string) => {
-  // カテゴリによって日本語に変換する
+const modifycategoryDropDown2 = (originalCategory: string) => {
   switch (originalCategory) {
     case 'eat':
-      return '食べる';
-    case 'drink':
-      return '飲む';
-    case 'play':
-      return '遊ぶ';
-    case 'stay':
-      return '泊まる';
-    
+      return <MdRestaurant size={30}/>;
+    case 'sale':
+      return <FaCartShopping size={30}/>;
+    case 'life':
+      return <FaHandHoldingHeart size={30}/>;
+    case 'health':
+      return <RiMentalHealthFill  size={30}/>;
+    case 'business':
+      return <MdBusinessCenter size={30}/>;
+    case 'hobby':
+      return <FaSnowman size={30}/>;
+    case 'night':
+      return <MdNightlife size={30}/>;
+    case 'other':
+      return <MdOtherHouses size={30}/>;
     default:
       return originalCategory;
   }
@@ -28,7 +38,7 @@ function InformationModal({partner}:any) {
            <div>
            <button className="relative inline-flex items-center justify-center w-[52px] sm:w-[42px] h-[52px] sm:h-[42px] p-1 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 rounded-lg group bg-carrot focus:outline-none focus:ring-none">
            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
-           {modifyCategoryDropdown(partner.categoryDropdown)}
+           {modifycategoryDropDown2(partner.categoryDropDown2)}
           </span>
           </button>
 
