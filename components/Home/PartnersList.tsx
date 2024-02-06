@@ -164,7 +164,7 @@ function PartnersList(props: any) {
       <span>ナイトレジャー</span>
     </div>
     <div>
-    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('nights'))}><MdNightlife size={30}/></button>
+    <button className="menu-button menu-button bg-white text-black rounded-full p-2 shadow-md text-sm" onClick={() => setCategory(getDropdownValue('night'))}><MdNightlife size={30}/></button>
     </div>
     </div>
     <div className="flex justify-end">
