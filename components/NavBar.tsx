@@ -23,8 +23,8 @@ function NavBar() {
         </div>
       </div>   
       <div>
-        <button className='text-[12px] m-2 mt-3 min-w-[80px] mb-3 bg-black hover:bg-dark-brown text-white font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full m-2 sm:m-2 hover:border-[1px] cursor-pointer duration-5 self-end'>
-          <a href="mailto:contact&#64;monreve-sc.co.jp">お問合せはこちら</a>
+        <button className='text-[12px] m-2 mt-3 min-w-[80px] mb-3 bg-black hover:bg-dark-brown text-white font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer duration-5 self-end'>
+          <a href="mailto:contact&#64;monreve-sc.co.jp">お問合せ</a>
         </button>
       </div>      
     </div>
