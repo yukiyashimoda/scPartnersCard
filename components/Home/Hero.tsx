@@ -6,7 +6,7 @@ function Hero() {
     <div className='  w-full '>
       <div className="relative flex flex-col ">
         <div className="flex-grow">
-          <h2 className='text-[30px] md:text-[25px] sm:-[20px] mt-5 ml-3 font-400'>
+          <h2 className='text-[30px] md:text-[25px] sm:-[20px] mt-5 ml-3 font-700 tracking-widest'>
             <span className='special-font'>SPECIAL CLUB PARTNERS</span>
           </h2>
           <h2 className='text-[30px] md:text-[25px] sm:-[20px] ml-3 font-400'>
