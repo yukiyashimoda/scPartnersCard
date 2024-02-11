@@ -11,15 +11,6 @@ function NavBar() {
       width={40}
       height={60}
       />
-      <div>
-      <h2 className='text-[14px] md:text-[14px] sm:-[10px] ml-2 font-400 tracking-wide text-gray-600'>
-            <span className='special-font'>SPECIAL CLUB</span>
-      </h2>
-      <h2 className='text-[14px] md:text-[14px] sm:-[10px] ml-2 font-400 tracking-wide text-gray-600'>
-            <span className='special-font'>PARTNERS</span>
-      </h2>
-      </div>
-      
     </div>
     </div>
   )
