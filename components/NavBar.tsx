@@ -3,13 +3,13 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <div className='flex items-center 
-    justify-center p-3 px-5 shadow-sm border-b-[1px]'>
-      <div className='flex items-center gap-5'>
+    <div className='bg-transparent flex items-center 
+    justify-between p-3 px-5 '>
+      <div className='flex items-center gap-5 ml-[70px] '>
       <Image src='/SClogo.svg'
       alt='logo'
-      width={60}
-      height={100}
+      width={50}
+      height={80}
       />
     </div>
     </div>
