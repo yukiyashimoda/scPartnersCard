@@ -6,10 +6,10 @@ function Hero() {
     <div className='  w-full '>
       <div className="relative flex flex-col ">
         <div className="flex-grow">
-          <h2 className='text-[17px] md:text-[12px] sm:-[7px] mt-5 ml-3 font-400 tracking-wide text-gray-600'>
+          <h2 className='text-[25px] md:text-[20px] sm:-[15px] mt-5 ml-3 font-400 tracking-wide text-gray-600'>
             <span className='special-font'>SPECIAL CLUB</span>
           </h2>
-          <h2 className='text-[30px] md:text-[25px] sm:-[20px] ml-3 font-700'>
+          <h2 className='text-[60px] md:text-[5px] sm:-[50px] mt-[-15px] ml-3 font-600 justify-center'>
             <span className='special-font'>PARTNERS</span>
           </h2>
           <h2 className='text-[12px] text-gray-600 pr-5 mt-2 ml-3'>SPECIAL CLUB入会企業様、提携企業様をご紹介。会員様がご利用いただける豊富な特典をご用意しております。</h2>
