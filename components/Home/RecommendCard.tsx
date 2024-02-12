@@ -15,7 +15,7 @@ function RecommendCard(props: any) {
       <div className="absolute inset-0 bg-black opacity-20 rounded-2xl"></div>
         <div className="flex-col inset-0 justify-end">
           <div className='p-3'>
-            <h2 className='text-[14px] font-bold text-dark-brown'>{partner?.companyName}</h2>
+            <h2 className='text-[12px] font-semibold text-dark-brown'>{partner?.companyName}</h2>
           </div>
           <div className='px-5 pl-3'>
             <button className='p-3 flex bg-emerald-600 font-bold rounded-lg text-white w-full justify-between text-[12px] focus:ring-none focus:outline-none'>
