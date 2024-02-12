@@ -32,7 +32,7 @@ const modifycategoryDropDown2 = (originalCategory: string) => {
 function InformationModal({ partner }: any) {
   return (
     <div className="modal-box w-95% max-w-2xl bg-white">
-      <div className='grid grid-cols-1 p-[5px]'>
+      <div className='grid grid-cols-1'>
         <div className="">
           <div className='flex'>
            <div>
