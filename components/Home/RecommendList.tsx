@@ -1,5 +1,6 @@
 import React from 'react';
-import PartnerCard from './PartnerCard';
+import RecommendCard from './RecommendCard';
+import InformationModal from '../Information/InformationModal';
 
 interface Partner {
   // パートナーカードのデータ構造に合わせたインターフェースを定義してください
@@ -9,16 +10,18 @@ interface Partner {
   //     他に必要なプロパティがあれば追加してください
 }
 
+      
 interface RecommendListProps {
   partnersList: Partner[];
 }
 
 const RecommendList: React.FC<RecommendListProps> = ({ partnersList }) => {
   return (
+    
     <div className='flex overflow-x-auto p-5'>
       {partnersList.map((partner, index) => (
-        <div key={index} className='flex-none mr-5'>
-          <PartnerCard partner={partner} />
+        <div key={index} className='flex-none mr-5' style={{ width: '50%', height: '50%'}}>
+          <RecommendCard partner={partner} />
         </div>
       ))}
     </div>
