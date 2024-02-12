@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import InformationModal from '../Information/InformationModal';
 
 function RecommendCard(props: any) {
   const [partner, setPartner] = useState<any>();
@@ -7,7 +8,14 @@ function RecommendCard(props: any) {
     if (props.partner) {
       setPartner(props.partner)
     }
-  }, [props.partner])
+  }, [props.partner]);
+
+  const openModal = () => {
+    setSelectedPartner(partner);
+    (window as any).my_modal_4.showModal();
+  };
+
+  const [selectedPartner, setSelectedPartner] = useState<any>();
 
   return partner && (
     <div className='relative shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f5f5f5] rounded-2xl hover:bg-white hover:border-[1px] cursor-pointer duration-5' style={{ position: 'relative', height: '250px', marginRight: '5px', borderRadius: '10px' }}>
@@ -18,7 +26,7 @@ function RecommendCard(props: any) {
             <h2 className='text-[12px] font-semibold text-dark-brown'>{partner?.companyName}</h2>
           </div>
           <div className='px-5 pl-3'>
-            <button className='p-3 flex bg-emerald-600 font-bold rounded-lg text-white w-full justify-between text-[12px] focus:ring-none focus:outline-none'>
+            <button className='p-3 flex bg-emerald-600 font-bold rounded-lg text-white w-full justify-between text-[12px] focus:ring-none focus:outline-none' onClick={openModal}>
             詳細を見る
               <span className='bg-transparent font-bold'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-white">
@@ -29,7 +37,7 @@ function RecommendCard(props: any) {
           </div>
         </div>
     </div>
-  )
+  );
 }
 
 export default RecommendCard;
