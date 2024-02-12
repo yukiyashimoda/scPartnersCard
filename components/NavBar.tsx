@@ -14,7 +14,7 @@ function NavBar() {
           />
         </div>
         <div>
-          <h2 className='flex jusutify-center text-[14px] md:text-[12px] sm:-[10px] ml-3 font-400 tracking-widest text-emerald-400 items-center mt-1'>
+          <h2 className='flex jusutify-center text-[14px] md:text-[12px] sm:-[10px] ml-3 font-400 tracking-widest text-emerald-600 items-center mt-1'>
             <span className='special-font'>SPECIALCLUB</span>
           </h2>
           <h2 className='text-[14px] md:text-[12px] sm:-[10px] ml-3 font-800 tracking-widest'>

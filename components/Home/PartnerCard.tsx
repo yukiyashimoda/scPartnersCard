@@ -45,7 +45,7 @@ function PartnerCard(props:any) {
     hover:border-[1px] cursor-pointer duration-5'>
     <div className="flex">
       <div>
-      <button className="relative inline-flex items-center justify-center w-[52px] sm:w-[42px] h-[52px] sm:h-[42px] p-1 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 rounded-lg group bg-carrot ">
+      <button className="relative inline-flex items-center justify-center w-[52px] sm:w-[42px] h-[52px] sm:h-[42px] p-1 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 rounded-lg group bg-emerald-600 ">
   <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 whitespace-nowrap">
     {modifycategoryDropDown2(partner.categoryDropDown2)}
   </span>
@@ -55,7 +55,7 @@ function PartnerCard(props:any) {
       </div>
       <div className='truncate'>
         <h2 className='text-[16px] font-bold  truncate text-dark-brown'>{partner?.companyName}</h2>
-        <h4 className='text-[12px] font-midium mb-2 truncate text-carrot'>{partner.shopName}</h4>
+        <h4 className='text-[12px] font-midium mb-2 truncate text-emerald-600'>{partner.shopName}</h4>
       </div>
     </div>
 
@@ -77,7 +77,7 @@ function PartnerCard(props:any) {
             </div>
             <div>
               <h2 className='text-[12px] font-bold ml-1 text-dark-brown'>{partner?.terms}</h2>
-              <h2 className='text-[16px] font-bold pb-1 ml-1 text-carrot'>{partner?.benefit}</h2>
+              <h2 className='text-[16px] font-bold pb-1 ml-1 text-emerald-600'>{partner?.benefit}</h2>
               {/* <h2 className='line-clamp-5 text-[14px] font-light'>{partner?.notice}</h2> */}
             </div>
           </div>
