@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { getPartnersList } from "@/services";
 import { useEffect, useState } from 'react';
 import PartnersList from '@/components/Home/PartnersList';
+import RecommendList from '@/components/Home/RecommendList';
+
 
 
 export default function Home() {
@@ -32,6 +34,12 @@ export default function Home() {
       <Hero />
       {/* <FiltersOption partnersList={partnersOrgList}
       setCategory={(value:string)=>filterPartnerList(value)} /> */}
+      <div>
+      <h2 className='text-[18px] md:text-[16px] sm:-[14px] ml-3 font-800 tracking-widest pl-[3%]'>
+            <span className='special-font'>Recommend</span>
+          </h2>
+      </div>
+      <RecommendList partnersList={partnersList}/>
       <PartnersList partnersList={partnersList} />
     </div>
   )

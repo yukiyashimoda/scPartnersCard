@@ -5,6 +5,7 @@ export const getPartnersList = async() => {
   query PartnerList {
     partnerLists {
       categoryDropDown2
+      recommend
       createdAt
       id
       companyName
