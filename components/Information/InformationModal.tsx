@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import Image from 'next/image'
+// InformationModal.tsx
+import React from 'react';
+import Image from 'next/image';
 import { MdRestaurant, MdBusinessCenter, MdNightlife, MdOtherHouses } from "react-icons/md";
 import { FaHandHoldingHeart, FaSnowman } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
@@ -28,8 +29,7 @@ const modifycategoryDropDown2 = (originalCategory: string) => {
   }
 };
 
-function InformationModal({partner}:any) {
-  
+function InformationModal({ partner }: any) {
   return (
     <div className="modal-box w-95% max-w-2xl bg-white">
       <div className='grid grid-cols-1 p-[5px]'>
@@ -41,8 +41,6 @@ function InformationModal({partner}:any) {
            {modifycategoryDropDown2(partner.categoryDropDown2)}
           </span>
           </button>
-
-
            </div>
            <div className='truncate'>
             <h2 className='text-[16px] font-bold  truncate text-dark-brown'>{partner?.companyName}</h2>
@@ -54,8 +52,7 @@ function InformationModal({partner}:any) {
              alt={partner.companyName}
              width={660}
              height={600}
-             className=' 
-            mb-3 object-cover py-5' />
+             className='mb-3 object-cover py-5' />
           <div className='flex gap-2 pb-5'>
             <button type="button"
              className="flex flex-col items-center text-white bg-carrot hover:bg-light-orange font-medium rounded-lg text-sm px-5 py-2.5 mb-2 flex-grow"
@@ -118,9 +115,6 @@ function InformationModal({partner}:any) {
             </div>
           </div>
           <div className="modal-action">
-             <form method="dialog">
-             <button className="btn">Close</button>
-             </form>
           </div>
         </div>
         </div>
@@ -132,4 +126,4 @@ function InformationModal({partner}:any) {
   )
 }
 
-export default InformationModal
+export default InformationModal;

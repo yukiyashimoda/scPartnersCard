@@ -7,7 +7,6 @@ import PartnersList from '@/components/Home/PartnersList';
 import RecommendList from '@/components/Home/RecommendList';
 
 
-
 export default function Home() {
 
   const [partnersList,setPartnersList]=useState<any>([])
@@ -39,7 +38,7 @@ export default function Home() {
             <span className='special-font'>Recommend →</span>
           </h2>
       </div>
-      <RecommendList partnersList={partnersList}/>
+      <RecommendList partnersList={partnersList} />
       <PartnersList partnersList={partnersList} />
     </div>
   )
