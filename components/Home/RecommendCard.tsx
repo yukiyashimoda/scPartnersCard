@@ -36,7 +36,7 @@ function RecommendCard(props: any) {
   return (
     <div className='relative shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] group bg-[#f5f5f5] rounded-2xl hover:bg-white hover:border-[1px] cursor-pointer duration-5' style={{ position: 'relative', height: '250px', marginRight: '5px', borderRadius: '10px' }}>
       <div style={{ backgroundImage: `url(${props.partner.image.url})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100%', width: '100%', borderRadius: '10px' }}></div>
-      <div className="absolute inset-0 bg-black opacity-20 rounded-2xl"></div>
+      <div className="absolute inset-0 rounded-2xl"></div>
       <div className="flex-col inset-0 justify-end">
         <div className='p-3'>
           <h2 className='text-[12px] font-semibold text-dark-brown'>{props.partner?.companyName}</h2>
