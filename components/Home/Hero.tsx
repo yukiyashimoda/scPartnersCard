@@ -30,7 +30,7 @@ function Hero() {
             height={500}
             className="object-cover"
           />
-          <p className="text-[20px] absolute bottom-0 left-0 text-white p-2">SPECIAL CLUB OFFICIAL SITE →</p>
+          <p className="text-[14px] absolute bottom-0 left-0 text-white p-2">SPECIAL CLUB OFFICIAL SITE →</p>
         </div>
       </a>
       <a href="https://specialclubonline.myshopify.com" className={`w-full ${isMobile ? 'sm:w-full' : 'sm:w-1/2'}`}>
@@ -43,7 +43,7 @@ function Hero() {
             height={500}
             className="object-cover"
           />
-          <p className="text-[20px] absolute bottom-0 left-0 text-white p-2">SPECIAL CLUB ONLINE STORE →</p>
+          <p className="text-[14px] absolute bottom-0 left-0 text-white p-2">SPECIAL CLUB ONLINE STORE →</p>
         </div>
       </a>
     </div>
