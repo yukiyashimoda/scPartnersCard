@@ -18,7 +18,7 @@ const RecommendList: React.FC<RecommendListProps> = ({ partnersList }) => {
   return (
     <div className='flex overflow-x-auto p-5'>
       {recommendedPartners.map((partner, index) => (
-        <div key={index} className='flex-none ml-5'>
+        <div key={index} className='flex-none ml-3'>
           <RecommendCard partner={partner} />
         </div>
       ))}
