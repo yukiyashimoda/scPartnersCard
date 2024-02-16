@@ -82,7 +82,7 @@ function PartnerCard(props:any) {
             </div>
           </div>
         </div>
-        <button className='hidden group-hover:flex bg-dark-brown font-bold
+        <button className='hidden group-hover:flex bg-gray-800 font-bold
     p-3 rounded-lg text-white w-full px-5 justify-between text-[14px] focus:ring-4 focus:outline-none focus:ring-green-200 '
     >
         詳細を見る
