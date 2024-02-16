@@ -90,7 +90,7 @@ function InformationModal({ partner }: any) {
             </div>
             <div>
               <h2 className='text-[14px] font-light ml-1 text-dark-brown'>{partner?.terms}</h2>
-              <h2 className='text-[18px] font-bold pb-0 ml-1 text-emerald-600'>{partner?.benefit}</h2>
+              <h2 className='text-[14px] font-bold pb-0 ml-1 text-emerald-600'>{partner?.benefit}</h2>
             </div>
           </div>
           <div>
