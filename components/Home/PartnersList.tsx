@@ -120,7 +120,7 @@ function FiltersOption({ partnersList, setCategory }: any) {
             <span className='text-[18px] md:text-[16px] sm:-[14px] font-800 tracking-widest pl-[3%] text-gray-800 pt-5'>Category</span>
           </div>
           <select
-            className="py-10 bg-white p-10 sm:p-5 rounded-2xl m-5 sm:m-2
+            className="py-10 bg-white p-10 sm:p-5 rounded-2xl m-5 
             hover:bg-white h-[3rem]
             border-[1px] border-black
             hover:border-black cursor-pointer duration-5 text-[16px] text-black
