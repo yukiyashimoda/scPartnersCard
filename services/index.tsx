@@ -13,6 +13,8 @@ export const getPartnersList = async() => {
       introduction
       terms
       benefit
+      terms2
+      benefit2
       notice
       postNumber
       address

@@ -84,7 +84,7 @@ function InformationModal({ partner }: any) {
             <div>
             <button className="relative inline-flex items-center justify-center w-10 h-10 p-0.5 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 group bg-transparent border-r-4 px-5">
             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap text-[14px] font-bold">
-            特典
+            特典 
                </span>
             </button>
             </div>
@@ -92,6 +92,21 @@ function InformationModal({ partner }: any) {
               <h2 className='text-[14px] font-light ml-1 text-dark-brown'>{partner?.terms}</h2>
               <h2 className='text-[14px] font-bold pb-0 ml-1 text-emerald-600'>{partner?.benefit}</h2>
             </div>
+          </div>
+          <div className='flex h-100 mb-5 '>
+          {partner?.terms2 && partner?.benefit2 && (
+            <div className='flex h-100 mb-5 '>
+              <button className="relative inline-flex items-center justify-center w-10 h-10 p-0.5 mb-1 me-2 overflow-hidden text-[10px] font-medium text-gray-900 group bg-transparent border-r-4 px-5">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap text-[14px] font-bold">特典2 
+              </span>
+              </button>
+            <div>
+              <h2 className='text-[14px] font-light ml-1 text-dark-brown'>{partner.terms2}</h2>
+              <h2 className='text-[14px] font-bold pb-0 ml-1 text-emerald-600'>{partner.benefit2}</h2>
+            </div>
+            </div>
+          )}
+
           </div>
           <div>
           <span className="relative py-5 transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap text-[14px] font-bold">

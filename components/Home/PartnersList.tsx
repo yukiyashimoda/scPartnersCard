@@ -31,7 +31,7 @@ function PartnersList(props: any) {
     <div>
       <FiltersOption partnersList={props.partnersList} setCategory={setCategory} />
 
-      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-10 mb-[100px] p-5'>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 mb-[100px] p-5'>
         {!isLoaded &&
           filteredPartnersList.map((partner: any, index: number) => (
             <div key={index} onClick={() => openModal(partner)}>
