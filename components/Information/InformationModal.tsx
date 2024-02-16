@@ -94,7 +94,10 @@ function InformationModal({ partner }: any) {
             </div>
           </div>
           <div>
-            <h2 className='line-clamp-5 text-[12px] font-light text-dark-brown'>{partner?.notice}</h2>
+          <span className="relative transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap text-[14px] font-bold">
+            ご利用条件
+               </span>
+            <h2 className='line-clamp-5 text-[14px] font-light text-dark-brown'>{partner?.notice}</h2>
             </div>
           <div className='flex h-100 mt-4 mb-4 border-t border-b border-dark-brown  '>
             <div className='mt-8 mb-8'>
