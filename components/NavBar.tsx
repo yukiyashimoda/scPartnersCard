@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import { GoHomeFill } from "react-icons/go";
-import Link from 'next/link' // Next.js の Link コンポーネントをインポート
-import React from 'react'
+import Link from 'next/link'; // Next.js の Link コンポーネントをインポート
+import React from 'react';
 
 function NavBar() {
   return (
@@ -19,21 +19,22 @@ function NavBar() {
           </div>
         </div>
         <div className='flex items-center'>
-          <button className='text-[10px] mt-2 mb-2 w-30 bg-gray-800 hover:bg-emerald-600 text-white font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer duration-5'>
-            <a href="mailto:contact&#64;monreve-sc.co.jp">お問合せ</a>
-          </button>
+          
         </div>
       </div>
-      <div className='flex justify-center md:justify-end items-center gap-5'>
-        <button className='text-[10px] mt-2 mb-2 w-50 bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-8 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer duration-5'>
+      <div className='flex justify-center md:justify-end items-center gap-3'>
+        <button className='text-[10px] mt-2 mb-2 min-w-[110px] bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-8 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer '>
           <Link href="/">HOME</Link>
         </button>
-        <button className='text-[10px] mt-2 mb-2 w-50 bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-8 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer duration-5'>
+        <button className='text-[10px] mt-2 mb-2 min-w-[110px] bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-8 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer '>
           <Link href="/map">MAP</Link>
         </button>
+        <button className='text-[10px] mt-2 mb-2 min-w-[110px] bg-transparent hover:bg-emerald-600 text-gray-800 font-semibold hover:text-white py-2 px-8 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer '>
+            <a href="mailto:contact&#64;monreve-sc.co.jp">お問合せ</a>
+          </button>
       </div>
     </div>
   )
 }
 
-export default NavBar
+export default NavBar;
