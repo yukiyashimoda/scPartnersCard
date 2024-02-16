@@ -94,7 +94,7 @@ function InformationModal({ partner }: any) {
             </div>
           </div>
           <div>
-          <span className="relative transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap text-[14px] font-bold">
+          <span className="relative py-5 transition-all ease-in duration-75 text-gray-800 rounded-md group-hover:bg-opacity-0 whitespace-nowrap text-[14px] font-bold">
             ご利用条件
                </span>
             <h2 className='line-clamp-5 text-[14px] font-light text-dark-brown'>{partner?.notice}</h2>
