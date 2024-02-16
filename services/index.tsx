@@ -3,7 +3,7 @@ import request,{gql} from "graphql-request";
 export const getPartnersList = async() => {
   const query=gql`
   query PartnerList {
-    partnerLists {
+    partnerLists(first: 100){
       categoryDropDown2
       recommend
       createdAt

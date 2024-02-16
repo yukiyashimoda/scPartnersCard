@@ -77,7 +77,7 @@ function PartnerCard(props:any) {
             </div>
             <div>
               <h2 className='text-[12px] font-bold ml-1 text-dark-brown'>{partner?.terms}</h2>
-              <h2 className='text-[16px] font-bold pb-1 ml-1 text-emerald-600'>{partner?.benefit}</h2>
+              <h2 className='text-[14px] font-bold pb-1 ml-1 text-emerald-600'>{partner?.benefit}</h2>
               {/* <h2 className='line-clamp-5 text-[14px] font-light'>{partner?.notice}</h2> */}
             </div>
           </div>
