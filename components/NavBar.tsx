@@ -5,7 +5,7 @@ import React from 'react';
 
 function NavBar() {
   return (
-    <div className='bg-transparent flex flex-col md:flex-row items-center justify-between p-3 px-5 z-99'>
+    <div className='bg-[#f5f5f5] flex flex-col md:flex-row items-center justify-between p-3 px-5 z-99 shadow-sm '>
       <div className='flex items-center gap-5 pl-[3%] p-1 justify-between w-full'>
         <div className='flex items-center gap-5 '>
           <Image src='/SClogo.svg' alt='logo' width={50} height={70} />
