@@ -19,16 +19,16 @@ function Hero() {
   }, []);
 
   return (
-    <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} p-5 sm:px-10 md:px-10 gap-5 w-full`}>
+    <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} p-5 sm:px-10 md:px-10 gap-5 w-full `}>
       <a href="https://specialclub-sc.com" className={`w-full ${isMobile ? 'sm:w-full' : 'sm:w-1/2'}`}>
-        <div className="cursor-pointer flex w-full relative rounded-lg overflow-hidden">
+        <div className="cursor-pointer flex w-full relative rounded-lg overflow-hidden ">
           <Image
             src="/sclounge.jpg"
             alt="Special Club"
             layout="responsive"
             width={500}
             height={500}
-            className="object-cover"
+            className="object-cover shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)]"
           />
           <p className="text-[14px] absolute bottom-0 left-0 text-white p-2">SPECIAL CLUB OFFICIAL SITE →</p>
         </div>
@@ -41,7 +41,7 @@ function Hero() {
             layout="responsive"
             width={500}
             height={500}
-            className="object-cover"
+            className="object-cover shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)]"
           />
           <p className="text-[14px] absolute bottom-0 left-0 text-white p-2">SPECIAL CLUB ONLINE STORE →</p>
         </div>
