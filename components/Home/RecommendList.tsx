@@ -18,10 +18,33 @@ const RecommendList: React.FC<RecommendListProps> = ({ partnersList }) => {
   return (
     <div className='flex overflow-x-auto p-5'>
       {recommendedPartners.map((partner, index) => (
-        <div key={index} className='flex-none mr-3' style={{ width: '60%', height: '400px'}}>
+        <div key={index} className='flex-none mr-3'>
           <RecommendCard partner={partner} />
         </div>
       ))}
+      
+      <style jsx>{`
+        @media screen and (max-width: 640px) { /* スマートフォン */
+          .flex-none {
+            width: 60%;
+            height: 400px;
+          }
+        }
+
+        @media screen and (min-width: 641px) and (max-width: 1024px) { /* タブレット */
+          .flex-none {
+            width: 45%;
+            height: 400px;
+          }
+        }
+
+        @media screen and (min-width: 1025px) { /* Web */
+          .flex-none {
+            width: 30%;
+            height: 400px;
+          }
+        }
+      `}</style>
     </div>
   );
 }
