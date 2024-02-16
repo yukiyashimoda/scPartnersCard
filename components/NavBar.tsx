@@ -1,17 +1,15 @@
 import Image from 'next/image'
+import { GoHomeFill } from "react-icons/go";
+import Link from 'next/link' // Next.js の Link コンポーネントをインポート
 import React from 'react'
 
 function NavBar() {
   return (
-    <div className='bg-transparent flex items-center 
-      justify-between p-3 px-5 z-99'>
-      <div className='flex'>
+    <div className='bg-transparent flex items-center justify-between p-3 px-5 z-99'>
+      <div className='flex items-center gap-5 pl-[3%] p-1 '>
+        {/* ロゴ */}
         <div className='flex items-center gap-5 pl-[3%] p-1 '>
-          <Image src='/SClogo.svg'
-            alt='logo'
-            width={50}
-            height={70}
-          />
+          <Image src='/SClogo.svg' alt='logo' width={50} height={70} />
         </div>
         <div>
           <h2 className='flex jusutify-center text-[14px] md:text-[12px] sm:-[10px] ml-3 font-400 tracking-widest text-emerald-600 items-center mt-1'>
@@ -21,12 +19,19 @@ function NavBar() {
             <span className='special-font'>PARTNERS</span>
           </h2>
         </div>
-      </div>   
-      <div>
+      </div>
+      <div className='flex items-center'>
+        <button className='text-[12px] m-2 mt-3 min-w-[80px] mb-3 bg-gray-800 hover:bg-emerald-600 text-white font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer duration-5 self-end'>
+          <Link href="/">HOME</Link>
+        </button>
+        <button className='text-[12px] m-2 mt-3 min-w-[80px] mb-3 bg-gray-800 hover:bg-emerald-600 text-white font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer duration-5 self-end'>
+          <Link href="/map">MAP</Link>
+        </button>
+        
         <button className='text-[12px] m-2 mt-3 min-w-[80px] mb-3 bg-gray-800 hover:bg-emerald-600 text-white font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded-full sm:m-2 hover:border-[1px] cursor-pointer duration-5 self-end'>
           <a href="mailto:contact&#64;monreve-sc.co.jp">お問合せ</a>
         </button>
-      </div>      
+      </div>
     </div>
   )
 }
