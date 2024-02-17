@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PartnerCard from './PartnerCard';
 import InformationModal from '../Information/InformationModal';
+import Image from 'next/image';
 
 function PartnersList(props: any) {
   const [isLoaded, setIsLoaded] = useState(true);
